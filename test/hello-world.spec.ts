@@ -7,7 +7,7 @@ describe('HelloWorld', () => {
 
   beforeEach(() => {
     component = StageComponent
-      .withResources('./../src/hello-world')
+      .withResources('hello-world')
       .inView('<hello-world first-name.bind="firstName"></hello-world>')
       .boundTo({ firstName: 'Bob' });
   });
@@ -20,8 +20,7 @@ describe('HelloWorld', () => {
     }).catch(e => { console.log(e.toString()); });
   });
 
-  // afterEach(() => {
-  //   component.dispose();
-  // });
-
+  afterEach(() => {
+    component.dispose();
+  });
 });
