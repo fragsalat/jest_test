@@ -10,5 +10,13 @@
     "js",
     "jsx",
     "json"
+  ],
+  "testEnvironment": "node",
+  "setupFiles": [
+    "<rootDir>/test/setup.ts"
+  ],
+  "modulePaths": [
+    "<rootDir>/src",
+    "<rootDir>/node_modules"
   ]
 }
