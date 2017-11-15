@@ -12,7 +12,7 @@ describe('HelloWorld', () => {
       .boundTo({ firstName: 'Bob' });
   });
 
-  test('should render first name', done => {
+  it('should render first name', done => {
     component.create(bootstrap).then(() => {
       console.warn('hey');
       const nameElement = document.querySelector('.firstName');
